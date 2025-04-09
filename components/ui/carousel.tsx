@@ -59,7 +59,7 @@ export default function Carousel({
           <div key={item.id} className="w-full flex-shrink-0">
             <div className="relative h-64 sm:h-80 md:h-96">
               <Image src={item.imageSrc || "/placeholder.svg"} alt={item.title} fill className="object-cover" />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-end p-4">
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-end p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
                 {item.description && <p className="text-white text-sm max-w-md text-center">{item.description}</p>}
               </div>
@@ -86,7 +86,7 @@ export default function Carousel({
       )}
 
       {showIndicators && (
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+        <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex space-x-2 mb-1">
           {items.map((_, index) => (
             <button
               key={index}

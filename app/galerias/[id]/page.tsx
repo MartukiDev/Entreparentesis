@@ -5,62 +5,62 @@ import { ChevronLeft } from "lucide-react"
 
 // Mock data - in a real app, this would come from a database or CMS
 const galleries = {
-  "festival-2022": {
-    title: "V Festival de Teatro de Buin (2022)",
+  "festival-2023": {
+    title: "XV Festival de Teatro de Buin (2023)",
     description:
-      "Imágenes de las presentaciones, talleres y actividades del V Festival de Teatro de Buin realizado en octubre de 2022.",
-    images: Array.from({ length: 12 }, (_, i) => ({
+      "Imágenes de las presentaciones, talleres y actividades del XV Festival de Teatro de Buin realizado en 2023.",
+    images: Array.from({ length: 38 }, (_, i) => ({
       id: `festival-2022-${i}`,
-      src: `/placeholder.svg?height=${600 + i * 10}&width=${800 + i * 10}`,
+      src: `/galery/festival2023/${i + 1}.webp`,
+      alt: `Festival de Teatro de Buin 2023 - Imagen ${i + 1}`,
+    })),
+  },
+  "festival-2022": {
+    title: "XIV Festival de Teatro de Buin (2022)",
+    description:
+      "Imágenes de las presentaciones, talleres y actividades del XIV Festival de Teatro de Buin realizado en 2022.",
+    images: Array.from({ length: 55 }, (_, i) => ({
+      id: `festival-2023-${i}`,
+      src: `/galery/festival2022/${i + 1}.webp`,
       alt: `Festival de Teatro de Buin 2022 - Imagen ${i + 1}`,
     })),
   },
-  "la-tempestad-2023": {
-    title: "La Tempestad (2023)",
-    description:
-      "Fotografías del proceso de montaje y presentaciones de nuestra adaptación de La Tempestad de William Shakespeare.",
-    images: Array.from({ length: 9 }, (_, i) => ({
-      id: `la-tempestad-${i}`,
-      src: `/placeholder.svg?height=${600 + i * 10}&width=${800 + i * 10}`,
-      alt: `La Tempestad - Imagen ${i + 1}`,
+  "festival-2024": {
+    title: "XVI Festival de Teatro de Buin (2024)",
+    description: "Imágenes de las presentaciones, talleres y actividades del XIII Festival de Teatro de Buin realizado en 2024.",
+    images: Array.from({ length: 68 }, (_, i) => ({
+      id: `festival-2021-${i}`,
+      src: `/galery/festival2024/${i + 1}.webp`,
+      alt: `Festival de Teatro de Buin 2024 - Imagen ${i + 1}`,
     })),
   },
-  "el-jardin-de-los-cerezos-2022": {
-    title: "El Jardín de los Cerezos (2022)",
-    description: "Registro fotográfico de nuestra adaptación contemporánea de la obra clásica de Antón Chéjov.",
-    images: Array.from({ length: 8 }, (_, i) => ({
-      id: `el-jardin-${i}`,
-      src: `/placeholder.svg?height=${600 + i * 10}&width=${800 + i * 10}`,
-      alt: `El Jardín de los Cerezos - Imagen ${i + 1}`,
-    })),
-  },
-  "talleres-2022": {
-    title: "Talleres de Formación Teatral (2022)",
+  "talleres": {
+    title: "Talleres de Formación Teatral",
     description:
-      "Imágenes de los talleres de formación teatral realizados durante el año 2022 para niños, jóvenes y adultos.",
-    images: Array.from({ length: 15 }, (_, i) => ({
+      "Imágenes de los talleres de formación teatral realizados por la compañía",
+    images: Array.from({ length: 37 }, (_, i) => ({
       id: `talleres-${i}`,
-      src: `/placeholder.svg?height=${600 + i * 10}&width=${800 + i * 10}`,
+      src: `/galery/talleres/${i + 1}.webp`,
       alt: `Talleres de Formación Teatral - Imagen ${i + 1}`,
     })),
   },
-  "gira-regional-2021": {
-    title: "Gira Regional (2021)",
+  "angue-pangue": {
+    title: "Angë Pangue",
     description:
-      "Fotografías de nuestra gira por diversas comunas de la Región Metropolitana durante el segundo semestre de 2021.",
-    images: Array.from({ length: 11 }, (_, i) => ({
-      id: `gira-${i}`,
-      src: `/placeholder.svg?height=${600 + i * 10}&width=${800 + i * 10}`,
-      alt: `Gira Regional 2021 - Imagen ${i + 1}`,
+      "Fotografías de la obra de teatro 'Angë Pangue', una producción de la compañía.",
+    images: Array.from({ length: 86 }, (_, i) => ({
+      id: `angue-pangue-${i}`,
+      src: `/galery/angue-pangue/${i + 1}.webp`,
+      alt: `Angë Pangue - Imagen ${i + 1}`,
     })),
   },
-  "ensayos-y-procesos": {
-    title: "Ensayos y Procesos Creativos",
-    description: "Una mirada al trabajo interno de la compañía: ensayos, procesos creativos y preparación de montajes.",
-    images: Array.from({ length: 20 }, (_, i) => ({
-      id: `ensayos-${i}`,
-      src: `/placeholder.svg?height=${600 + i * 10}&width=${800 + i * 10}`,
-      alt: `Ensayos y Procesos Creativos - Imagen ${i + 1}`,
+  "foto-sintesis": {
+    title: "Foto Síntesis",
+    description: "Fotografías de la obra de teatro 'Foto Síntesis', una producción de la compañía.",
+    images: Array.from({ length: 49 }, (_, i) => ({
+      id: `foto-sintesis-${i}`,
+      src: `/galery/foto-sintesis/${i + 1}.webp`,
+      alt: `Foto Síntesis - Imagen ${i + 1}`,
     })),
   },
 }

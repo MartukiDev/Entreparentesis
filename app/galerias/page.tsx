@@ -4,50 +4,50 @@ import GalleryCard from "@/components/galerias/gallery-card"
 // This would typically come from a database or CMS
 const galleries = [
   {
+    id: "festival-2023",
+    title: "XV Festival de Teatro de Buin (2023)",
+    coverImage: "/galery/festival2023/1.webp",
+    description:
+      "Imágenes de las presentaciones, talleres y actividades del XV Festival de Teatro de Buin realizado en 2023.",
+    imageCount: 38,
+  },
+  {
     id: "festival-2022",
-    title: "V Festival de Teatro de Buin (2022)",
-    coverImage: "/placeholder.svg?height=600&width=800",
+    title: "XIV Festival de Teatro de Buin (2022)",
+    coverImage: "/galery/festival2022/1.webp",
     description:
-      "Imágenes de las presentaciones, talleres y actividades del V Festival de Teatro de Buin realizado en octubre de 2022.",
-    imageCount: 24,
+      "Imágenes de las presentaciones, talleres y actividades del XIV Festival de Teatro de Buin realizado en 2022.",
+    imageCount: 55,
   },
   {
-    id: "la-tempestad-2023",
-    title: "La Tempestad (2023)",
-    coverImage: "/placeholder.svg?height=600&width=800",
+    id: "festival-2024",
+    title: "XVI Festival de Teatro de Buin (2024)",
+    coverImage: "/galery/festival2024/4.webp",
+    description: "Imágenes de las presentaciones, talleres y actividades del XII Festival de Teatro de Buin realizado en 2024.",
+    imageCount: 68,
+  },
+  {
+    id: "talleres",
+    title: "Talleres de Formación Teatral",
+    coverImage: "/galery/talleres/1.webp",
     description:
-      "Fotografías del proceso de montaje y presentaciones de nuestra adaptación de La Tempestad de William Shakespeare.",
-    imageCount: 18,
+      "Imágenes de los talleres de formación teatral realizados por la compañía",
+    imageCount: 37,
   },
   {
-    id: "el-jardin-de-los-cerezos-2022",
-    title: "El Jardín de los Cerezos (2022)",
-    coverImage: "/placeholder.svg?height=600&width=800",
-    description: "Registro fotográfico de nuestra adaptación contemporánea de la obra clásica de Antón Chéjov.",
-    imageCount: 15,
-  },
-  {
-    id: "talleres-2022",
-    title: "Talleres de Formación Teatral (2022)",
-    coverImage: "/placeholder.svg?height=600&width=800",
+    id: "angue-pangue",
+    title: "Angë Pangue",
+    coverImage: "/galery/angue-pangue/41.webp",
     description:
-      "Imágenes de los talleres de formación teatral realizados durante el año 2022 para niños, jóvenes y adultos.",
-    imageCount: 30,
+      "Fotografías de la obra de teatro 'Angë Pangue', una producción de la compañía.",
+    imageCount: 86,
   },
   {
-    id: "gira-regional-2021",
-    title: "Gira Regional (2021)",
-    coverImage: "/placeholder.svg?height=600&width=800",
-    description:
-      "Fotografías de nuestra gira por diversas comunas de la Región Metropolitana durante el segundo semestre de 2021.",
-    imageCount: 22,
-  },
-  {
-    id: "ensayos-y-procesos",
-    title: "Ensayos y Procesos Creativos",
-    coverImage: "/placeholder.svg?height=600&width=800",
-    description: "Una mirada al trabajo interno de la compañía: ensayos, procesos creativos y preparación de montajes.",
-    imageCount: 40,
+    id: "foto-sintesis",
+    title: "Foto Síntesis",
+    coverImage: "/galery/foto-sintesis/7.webp",
+    description: "Fotografías de la obra de teatro 'Foto Síntesis', una producción de la compañía.",
+    imageCount: 49,
   },
 ]
 
