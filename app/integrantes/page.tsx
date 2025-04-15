@@ -58,14 +58,14 @@ const actorsMembers = [
     name: "Renato Espinoza",
     role: "Actor",
     imageSrc: "/images/integrantes/rinto1.webp",
-    description: "Integrante de la compañía desde el 2020, a cursado talleres de creación de personaje, movimiento e improvisación, actual Estudiante de Teatro de la UAHC",
+    description: "Integrante de la compañía desde el 2020, ah cursado talleres de creación de personaje, movimiento e improvisación, actual Estudiante de Teatro de la UAHC",
   },
   {
     id: "karla",
     name: "Karla Hassan",
     role: "Actriz",
     imageSrc: "/images/integrantes/karla1.webp",
-    description: "Actriz, pedagoga teatral, licenciada en teatro. forma parte del elenco de la compañía entreparéntesis como también del staff del festival de teatro 2025. Actualmente facilita el taller "laboratorio de expresión corporal"",
+    description: "Actriz, pedagoga teatral, licenciada en teatro. forma parte del elenco de la compañía entreparéntesis como también del staff del festival de teatro 2025. Actualmente facilita el taller Laboratorio de expresion corporal.",
   },
   {
     id: "aleks",
