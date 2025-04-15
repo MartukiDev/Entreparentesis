@@ -6,87 +6,80 @@ const directiveMembers = [
   {
     id: "rolando",
     name: "Rolando Collinao",
-    role: "Director General y Actor",
-    imageSrc: "/images/integrantes/rolando.jpg",
+    role: "Dramaturgo y director de teatro ritual mapuche",
+    imageSrc: "/images/integrantes/rolando1.webp",
     description:
-      "Fundadora de la compañía y directora de teatro con más de 20 años de experiencia. Ha dirigido más de 30 obras y es reconocida por su innovador enfoque en la adaptación de clásicos.",
+      "Creador de El hombre y la lluvia, Angë Pangue, entre otras obras dramáticas. Profesor de los talleres de Teatro Entreparéntesis. Actor.Es parte del equipo directivo, y organizador del Festival de Teatro de Buin desde sus inicios en el año 2008. Gestor Cultural y Relacionador Público de la Compañía.",
   },
   {
     id: "jany",
     name: "Alejandra Pérez",
     role: "Directora General y Actriz",
-    imageSrc: "/images/integrantes/jany.jpeg",
+    imageSrc: "/images/integrantes/janita1.webp",
     description:
-      "Actor y director con formación en la Escuela de Teatro de la Universidad de Chile. Especialista en teatro físico y técnicas de improvisación.",
+      "Parte del equipo directivo, fundadora de la Compañía en el año 2002. Dramaturga, novelista y editora.  Ha estrenado más de 27 obras a su haber, y tiene 7 libros publicados. Dentro de la Compañía está a cargo de la administración, gestión cultural, dirección de obras, escritura de obras dramáticas, clases de teatro, entre otros.",
   },
   {
-    id: "camilo",
-    name: "Camilo Araya",
-    role: "Equipo Directivo y Actor",
-    imageSrc: "/images/integrantes/camilo.jpeg",
+    id: "lernnie",
+    name: "Lernnie Moreno",
+    role: "Actriz y Pedagoga teatral",
+    imageSrc: "/images/integrantes/lernie1.webp",
     description:
-      "Gestora cultural con experiencia en producción de eventos artísticos. Responsable de la logística y financiamiento de los proyectos de la compañía.",
+      "Parte de equipo directivo Dirige taller de teatro de la Compañía. Parte del staff de Festival de Teatro Agente preventivo de violencia de género Profesora de teatro en diversas escuelas , ha trabajado en programas para reducir violencia escolar, erradicación del trabajo infantil, prevención de violencia de género en talleres para mujeres.",
   },
   {
     id: "miriam",
     name: "Miriam Casanova",
     role: "Equipo Directico y Actriz",
-    imageSrc: "/images/integrantes/miri.jpeg",
+    imageSrc: "/images/integrantes/miriam1.webp",
     description:
-      "Pedagogo teatral especializado en educación artística. Dirige los talleres y programas formativos de la compañía.",
+      "Participante activa del staff de organización y realización del Festival de teatro de Buin. Dentro de la compañía está a cargo de gestión cultural y tesorería.",
   },
+  {
+    id: "majose",
+    name: "María José Torres",
+    role: "Equipo Directico y Actriz",
+    imageSrc: "/images/integrantes/mariajose1.webp",
+    description:
+      "Actual estudiante de Derecho y parte del equipo de actrices y actores de la Compañía Entreparentesis desde el año 2019. Ha participado en diversos montajes y es participante activa de montajes actuales. Actualmente es integrante del equipo directivo de la compañía y parte del staff colaborador del Festival de Teatro de Buin.",
+  }
 ]
 
 const actorsMembers = [
   {
-    id: "jose",
-    name: "María José Torres",
-    role: "Actriz",
-    imageSrc: "/images/integrantes/jose.jpg",
-    description:
-      "Actriz con formación en teatro clásico y contemporáneo. Ha participado en más de 15 montajes de la compañía.",
-  },
-  {
     id: "exequiel",
     name: "Exequiel Contrerase",
     role: "Actor",
-    imageSrc: "/images/integrantes/exe.jpeg",
-    description: "Actor especializado en comedia y drama. Miembro de la compañía desde 2017.",
-  },
-  {
-    id: "fran",
-    name: "Francisca Pinto",
-    role: "Actriz",
-    imageSrc: "/images/integrantes/fran.jpeg",
-    description: "Actriz y bailarina con formación en teatro físico. Se destaca por su versatilidad interpretativa.",
-  },
-  {
-    id: "lernie",
-    name: "Lernnie Moreno",
-    role: "Actriz",
-    imageSrc: "/images/integrantes/lernie.jpg",
-    description: "Actor con experiencia en teatro musical. Se unió a la compañía en 2019.",
+    imageSrc: "/images/integrantes/exequiel1.webp",
+    description: "Estudiante y miembro de la compañia entreparentesis desde el año 2017. Forma parte del staff del festival de teatro y del elenco para actuales proyectos de entreparentesis.",
   },
   {
     id: "renato",
     name: "Renato Espinoza",
     role: "Actor",
-    imageSrc: "/images/integrantes/rinto.jpeg",
-    description: "Actor con experiencia en teatro musical. Se unió a la compañía en 2019.",
+    imageSrc: "/images/integrantes/rinto1.webp",
+    description: "N/A",
   },
   {
     id: "karla",
     name: "Karla Hassan",
     role: "Actriz",
-    imageSrc: "/images/integrantes/karlula.jpg",
-    description: "Actor con experiencia en teatro musical. Se unió a la compañía en 2019.",
+    imageSrc: "/images/integrantes/karla1.webp",
+    description: "N/A",
   },
   {
     id: "aleks",
     name: "Aleks Ramírez",
+    role: "Actor y Monitor Teatral",
+    imageSrc: "/images/integrantes/aleks1.webp",
+    description: "Parte del equipo de actores y actrices de la compañía entreparentesis desde el año 2022. Ha participado en mas de 20 proyectos teatrales y está a cargo de la dirección de 2 compañías profesionales emergentes. Dentro de la compañía entreparentesis se desempeña como actor en diversos montajes y es parte del staff del festival de teatro de Buin.",
+  },
+  {
+    id: "franco",
+    name: "Franco Correa",
     role: "Actor",
-    imageSrc: "/images/integrantes/aleks.jpeg",
-    description: "Actor con experiencia en teatro musical. Se unió a la compañía en 2019.",
+    imageSrc: "/images/integrantes/franco1.webp",
+    description: "Estudiante y miembro de la compañia entreparentesis desde el año 2017. Forma parte del staff del festival de teatro y del elenco para actuales proyectos de entreparentesis.",
   },
 ]
 
@@ -95,17 +88,25 @@ const technicalMembers = [
     id: "fran-salas",
     name: "Francisca Salas",
     role: "Cineasta y Fotógrafa",
-    imageSrc: "/images/integrantes/fransalas.jpeg",
+    imageSrc: "/images/integrantes/fran.webp",
     description:
-      "Arquitecta y diseñadora con especialización en escenografía teatral. Responsable del diseño visual de las producciones.",
+      "Francisca Salas García, Cineasta con especialidad en Dirección de Fotografía y Producción Ejecutiva de la Universidad de Valparaíso. Co-fundadora de Axis Mundi Producciones. Trabaja en la compañía de teatro Entreparéntesis desde el año 2007 y es parte del equipo de producción del Festival de Teatro de Buin desde su primera versión.",
   },
   {
-    id: "fabian",
-    name: "Fabian Arancibia",
-    role: "Diseñador de Iluminación",
-    imageSrc: "/images/integrantes/fabi.jpeg",
-    description: "Técnico especializado en iluminación escénica. Ha trabajado en más de 50 montajes teatrales.",
-  }
+    id: "martin-maturana",
+    name: "Martin Maturana",
+    role: "Desarrollador SW",
+    imageSrc: "/images/integrantes/martinmaturana.webp",
+    description:
+      "Estudiante de Ingeniería en Informática, con interés en el desarrollo de software y nuevas tecnologías. ",
+  },
+  {
+    id: "carol",
+    name: "Carol Cordóba",
+    role: "Periodita y Fotógrafa",
+    imageSrc: "/images/integrantes/carol1.webp",
+    description: "Fotógrafa Profesional periodista, publicitaria y forense. Artista de vocación. Tallerista  y socia de la compañía de teatro. Gestora cultural de Buin, en fotográfia. Parte del staff del Festival de teatro. Profesora de fotografía en el centro de reinserción Kumay. Community manager.",
+  },
 ]
 
 export default function TeamPage() {
@@ -132,7 +133,7 @@ export default function TeamPage() {
         <TeamSection title="Directiva" members={directiveMembers} />
 
         <TeamSection
-          title="Elenco Estable"
+          title="Integrantes"
           description="Actores y actrices que forman parte del núcleo permanente de la compañía."
           members={actorsMembers}
         />
