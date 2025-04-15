@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <HeroSection
-        title="Somos Entreparéntesis"
-        subtitle="Compañía de teatro de Buin"
+        title="Somos Entreparéntesis compañía de teatro de Buin"
+        subtitle="Organizadores del Festival de Teatro de Buin"
         buttonText="Conócenos"
         buttonLink="/nosotros"
         imageSrc="/images/hero-section.jpg"

@@ -19,7 +19,7 @@ export default function MissionVision() {
             </p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <SectionTitle title="Radio Entreparentesis" centered={false} />
+            <SectionTitle title="Radio Entreparéntesis" centered={false} />
             <p className="text-gray-600">
             Radio Entreparéntesis Comunitaria, 'Actúa contigo', tiene como objetivo principal otorgar un servicio a la Provincia del Maipo, con programas de interés público para nuestro territorio en el ámbito artístico, cultural y social. Potenciar la música de Buin y Paine, y otorgar espacio a las bandas y creadores musicales emergente del lado sur del Río Maipo. A su vez, ser una compañía para nuestro querido público, acercándoles a nuestras actividades, haciéndoles partícipes de nuestros procesos de creación y desarrollo social. Una radio amena, cercana, al servicio de nuestra gente.
             </p>
