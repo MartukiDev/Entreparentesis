@@ -22,15 +22,15 @@ const Members = [
   {
     id: "lernnie",
     name: "Lernnie Moreno",
-    role: "Actriz y Pedagoga teatral",
+    role: "Equipo Directivo, Actriz y Pedagoga Teatral",
     imageSrc: "/images/integrantes/lernie1.webp",
     description:
-      "Parte de equipo directivo Dirige taller de teatro de la Compañía. Parte del staff de Festival de Teatro Agente preventivo de violencia de género Profesora de teatro en diversas escuelas , ha trabajado en programas para reducir violencia escolar, erradicación del trabajo infantil, prevención de violencia de género en talleres para mujeres.",
+      "Parte de equipo directivo Dirige taller de teatro de la compañía. Parte del staff de Festival de Teatro Agente preventivo de violencia de género Profesora de teatro en diversas escuelas , ha trabajado en programas para reducir violencia escolar, erradicación del trabajo infantil, prevención de violencia de género en talleres para mujeres.",
   },
   {
     id: "miriam",
     name: "Miriam Casanova",
-    role: "Equipo Directico y Actriz",
+    role: "Equipo Directivo y Actriz",
     imageSrc: "/images/integrantes/miriam1.webp",
     description:
       "Participante activa del staff de organización y realización del Festival de teatro de Buin. Dentro de la compañía está a cargo de gestión cultural y tesorería.",
