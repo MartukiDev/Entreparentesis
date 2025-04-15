@@ -6,7 +6,7 @@ const Members = [
   {
     id: "rolando",
     name: "Rolando Collinao",
-    role: "Dramaturgo y Director de teatro ritual mapuche",
+    role: "Equipo directivo y dramaturgo",
     imageSrc: "/images/integrantes/rolando1.webp",
     description:
       "Creador de El hombre y la lluvia, Angë Pangue, entre otras obras dramáticas. Profesor de los talleres de Teatro Entreparéntesis. Actor.Es parte del equipo directivo, y organizador del Festival de Teatro de Buin desde sus inicios en el año 2008. Gestor Cultural y Relacionador Público de la Compañía.",
@@ -14,7 +14,7 @@ const Members = [
   {
     id: "jany",
     name: "Alejandra Pérez",
-    role: "Directora General y Actriz",
+    role: "Equipo directivo, Novelista y dramaturga",
     imageSrc: "/images/integrantes/janita1.webp",
     description:
       "Parte del equipo directivo, fundadora de la Compañía en el año 2002. Dramaturga, novelista y editora.  Ha estrenado más de 27 obras a su haber, y tiene 7 libros publicados. Dentro de la Compañía está a cargo de la administración, gestión cultural, dirección de obras, escritura de obras dramáticas, clases de teatro, entre otros.",
@@ -22,18 +22,18 @@ const Members = [
   {
     id: "lernnie",
     name: "Lernnie Moreno",
-    role: "Equipo Directivo, Actriz y Pedagoga Teatral",
+    role: "Equipo Directivo, Actriz y pedagoga Teatral",
     imageSrc: "/images/integrantes/lernie1.webp",
     description:
-      "Parte de equipo directivo Dirige taller de teatro de la compañía. Parte del staff de Festival de Teatro Agente preventivo de violencia de género Profesora de teatro en diversas escuelas , ha trabajado en programas para reducir violencia escolar, erradicación del trabajo infantil, prevención de violencia de género en talleres para mujeres.",
+      "Dirige taller de teatro de la compañía. Parte del staff de Festival de Teatro Agente preventivo de violencia de género. Profesora de teatro en diversas escuelas, ha trabajado en programas para reducir violencia escolar, erradicación del trabajo infantil, prevención de violencia de género en talleres para mujeres.",
   },
   {
     id: "miriam",
     name: "Miriam Casanova",
-    role: "Equipo Directivo y Actriz",
+    role: "Equipo Directivo y actriz",
     imageSrc: "/images/integrantes/miriam1.webp",
     description:
-      "Participante activa del staff de organización y realización del Festival de teatro de Buin. Dentro de la compañía está a cargo de gestión cultural y tesorería.",
+      "Participante activa del staff de organización y realización del Festival de teatro de Buin. Dentro de la compañía está a cargo de gestión cultural y tesorería. Parte de más de 10 Elencos de diferentes obras dramáticas, entre las cuales se encuentran 'Foto-Síntesis', 'Sin tiempo', entre otras.",
   },
   {
     id: "majose",
@@ -41,49 +41,49 @@ const Members = [
     role: "Equipo Directivo y Actriz",
     imageSrc: "/images/integrantes/mariajose1.webp",
     description:
-      "Actual estudiante de Derecho y parte del equipo de actrices y actores de la Compañía Entreparentesis desde el año 2019. Ha participado en diversos montajes y es participante activa de montajes actuales. Actualmente es integrante del equipo directivo de la compañía y parte del staff colaborador del Festival de Teatro de Buin.",
+      "Actual estudiante de Derecho y parte del equipo de actrices y actores de la Compañía Entreparéntesis desde el año 2019. Ha participado en diversos montajes y es participante activa de montajes actuales. Actualmente es integrante del equipo directivo de la compañía y parte del staff colaborador del Festival de Teatro de Buin.",
   },
   {
     id: "exequiel",
     name: "Exequiel Contreras",
     role: "Actor",
     imageSrc: "/images/integrantes/exequiel1.webp",
-    description: "Estudiante y miembro de la compañia entreparentesis desde el año 2017. Forma parte del staff del festival de teatro y del elenco para actuales proyectos de entreparentesis.",
+    description: "Estudiante y miembro de Compañia Entreparéntesis desde el año 2017. Forma parte del staff del festival de teatro y del elenco para actuales proyectos de entreparéntesis.",
   },
   {
     id: "renato",
     name: "Renato Espinoza",
     role: "Actor",
     imageSrc: "/images/integrantes/rinto1.webp",
-    description: "Integrante de la compañía desde el 2020, ah cursado talleres de creación de personaje, movimiento e improvisación, actual Estudiante de Teatro de la UAHC",
+    description: "Integrante de la compañía desde el 2020, ha cursado talleres de creación de personaje, movimiento e improvisación, actual Estudiante de Teatro de la UAHC.",
   },
   {
     id: "karla",
     name: "Karla Hassan",
     role: "Actriz",
     imageSrc: "/images/integrantes/karla1.webp",
-    description: "Actriz, pedagoga teatral, licenciada en teatro. forma parte del elenco de la compañía entreparéntesis como también del staff del festival de teatro 2025. Actualmente facilita el taller Laboratorio de expresion corporal.",
+    description: "Pedagoga teatral, Licenciada en teatro. Forma parte del elenco de la Compañía Entreparéntesis, como también del staff del festival de teatro 2025. Actualmente facilita el taller Laboratorio de expresión corporal.",
   },
   {
     id: "aleks",
     name: "Aleks Ramírez",
     role: "Actor y Monitor Teatral",
     imageSrc: "/images/integrantes/aleks1.webp",
-    description: "Parte del equipo de actores y actrices de la compañía entreparentesis desde el año 2022. Ha participado en mas de 20 proyectos teatrales y está a cargo de la dirección de 2 compañías profesionales emergentes. Dentro de la compañía entreparentesis se desempeña como actor en diversos montajes y es parte del staff del festival de teatro de Buin.",
+    description: "Parte del equipo de actores y actrices de la compañía entréparentesis desde el año 2022. Ha participado en mas de 20 proyectos teatrales y está a cargo de la dirección de 2 compañías profesionales emergentes. Dentro de la compañía entreparéntesis se desempeña como actor en diversos montajes y es parte del staff del festival de teatro de Buin.",
   },
   {
     id: "franco",
     name: "Franco Correa",
     role: "Actor",
     imageSrc: "/images/integrantes/franco1.webp",
-    description: "Estudiante y miembro de la compañia entreparentesis desde el año 2017. Forma parte del staff del festival de teatro y del elenco para actuales proyectos de entreparentesis.",
+    description: "Estudiante y miembro de la Compañía Entreparéntesis desde el año 2017. Forma parte del staff del festival de teatro y del elenco para actuales proyectos de entreparéntesis",
   },
   {
     id: "nicolle",
     name: "Nicolle Ramos",
     role: "Trabajadora Social",
     imageSrc: "/images/integrantes/nicole1.webp",
-    description: "Actualmente Directora de la Radio Entreparéntesis. Participante del taller juvenil-adulto desde el año 2023, actuando en los montajes ´Otra vez y una vez´ y ´Wachinango´.      Con vasta trayectoria y especialización en temáticas asociadas a niñez, adolescencia y vulneracion de derechos, desempeñando labores en este momento en el poder judicial.",
+    description: "Actualmente Directora de la Radio Entreparéntesis. Participante del taller juvenil-adulto desde el año 2023, actuando en los montajes ´Otra vez y una vez´ y ´Wachinango´. Con vasta trayectoria y especialización en temáticas asociadas a niñez, adolescencia y vulneración de derechos, desempeñando labores en este momento en el poder judicial.",
   },
   {
     id: "fran-salas",
@@ -96,7 +96,7 @@ const Members = [
   {
     id: "carol",
     name: "Carol Cordóba",
-    role: "Periodita y Fotógrafa",
+    role: "Periodista y Fotógrafa",
     imageSrc: "/images/integrantes/carol1.webp",
     description: "Fotógrafa Profesional periodista, publicitaria y forense. Artista de vocación. Tallerista  y socia de la compañía de teatro. Gestora cultural de Buin, en fotográfia. Parte del staff del Festival de teatro. Profesora de fotografía en el centro de reinserción Kumay. Community manager.",
   },
@@ -124,7 +124,7 @@ export default function TeamPage() {
         </div>
 
         <TeamSection title="Integrantes" members={Members}
-          description = "Estas son las personas que conforman el equipo de Compañia Entreparentesis."
+          description = "Estas son las personas que conforman el equipo de Compañia Entreparentesis.  Faltan tilde y una palabrita, cambiar por: 'Estas son las personas que conforman el equipo de la Compañía Entreparéntesis'."
         />
       </div>
     </div>
