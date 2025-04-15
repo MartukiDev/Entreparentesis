@@ -2,7 +2,7 @@ import SectionTitle from "@/components/ui/section-title"
 import TeamSection from "@/components/integrantes/team-section"
 
 // This would typically come from a database or CMS
-const directiveMembers = [
+const Members = [
   {
     id: "rolando",
     name: "Rolando Collinao",
@@ -38,17 +38,14 @@ const directiveMembers = [
   {
     id: "majose",
     name: "María José Torres",
-    role: "Equipo Directico y Actriz",
+    role: "Equipo Directivo y Actriz",
     imageSrc: "/images/integrantes/mariajose1.webp",
     description:
       "Actual estudiante de Derecho y parte del equipo de actrices y actores de la Compañía Entreparentesis desde el año 2019. Ha participado en diversos montajes y es participante activa de montajes actuales. Actualmente es integrante del equipo directivo de la compañía y parte del staff colaborador del Festival de Teatro de Buin.",
-  }
-]
-
-const actorsMembers = [
+  },
   {
     id: "exequiel",
-    name: "Exequiel Contrerase",
+    name: "Exequiel Contreras",
     role: "Actor",
     imageSrc: "/images/integrantes/exequiel1.webp",
     description: "Estudiante y miembro de la compañia entreparentesis desde el año 2017. Forma parte del staff del festival de teatro y del elenco para actuales proyectos de entreparentesis.",
@@ -81,9 +78,13 @@ const actorsMembers = [
     imageSrc: "/images/integrantes/franco1.webp",
     description: "Estudiante y miembro de la compañia entreparentesis desde el año 2017. Forma parte del staff del festival de teatro y del elenco para actuales proyectos de entreparentesis.",
   },
-]
-
-const technicalMembers = [
+  {
+    id: "nicolle",
+    name: "Nicolle Ramos",
+    role: "Trabajadora Social",
+    imageSrc: "/images/integrantes/nicole1.webp",
+    description: "Actualmente Directora de la Radio Entreparéntesis. Participante del taller juvenil-adulto desde el año 2023, actuando en los montajes ´Otra vez y una vez´ y ´Wachinango´.      Con vasta trayectoria y especialización en temáticas asociadas a niñez, adolescencia y vulneracion de derechos, desempeñando labores en este momento en el poder judicial.",
+  },
   {
     id: "fran-salas",
     name: "Francisca Salas",
@@ -91,14 +92,6 @@ const technicalMembers = [
     imageSrc: "/images/integrantes/fran.webp",
     description:
       "Francisca Salas García, Cineasta con especialidad en Dirección de Fotografía y Producción Ejecutiva de la Universidad de Valparaíso. Co-fundadora de Axis Mundi Producciones. Trabaja en la compañía de teatro Entreparéntesis desde el año 2007 y es parte del equipo de producción del Festival de Teatro de Buin desde su primera versión.",
-  },
-  {
-    id: "martin-maturana",
-    name: "Martin Maturana",
-    role: "Desarrollador SW",
-    imageSrc: "/images/integrantes/martinmaturana.webp",
-    description:
-      "Estudiante de Ingeniería en Informática, con interés en el desarrollo de software y nuevas tecnologías. ",
   },
   {
     id: "carol",
@@ -130,18 +123,8 @@ export default function TeamPage() {
           </p>
         </div>
 
-        <TeamSection title="Directiva" members={directiveMembers} />
-
-        <TeamSection
-          title="Integrantes"
-          description="Actores y actrices que forman parte del núcleo permanente de la compañía."
-          members={actorsMembers}
-        />
-
-        <TeamSection
-          title="Equipo Técnico"
-          description="Profesionales responsables de los aspectos técnicos y de diseño de nuestras producciones."
-          members={technicalMembers}
+        <TeamSection title="Equipo Directivo" members={Members}
+          description = "Estas son las personas que conforman el equipo de Compañia Entreparentesis."
         />
       </div>
     </div>
