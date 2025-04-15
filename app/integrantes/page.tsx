@@ -123,7 +123,7 @@ export default function TeamPage() {
           </p>
         </div>
 
-        <TeamSection title="Equipo Directivo" members={Members}
+        <TeamSection title="Integrantes" members={Members}
           description = "Estas son las personas que conforman el equipo de Compañia Entreparentesis."
         />
       </div>
