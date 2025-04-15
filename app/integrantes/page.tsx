@@ -6,7 +6,7 @@ const Members = [
   {
     id: "rolando",
     name: "Rolando Collinao",
-    role: "Dramaturgo y director de teatro ritual mapuche",
+    role: "Dramaturgo y Director de teatro ritual mapuche",
     imageSrc: "/images/integrantes/rolando1.webp",
     description:
       "Creador de El hombre y la lluvia, Angë Pangue, entre otras obras dramáticas. Profesor de los talleres de Teatro Entreparéntesis. Actor.Es parte del equipo directivo, y organizador del Festival de Teatro de Buin desde sus inicios en el año 2008. Gestor Cultural y Relacionador Público de la Compañía.",

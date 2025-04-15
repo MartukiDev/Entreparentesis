@@ -66,26 +66,6 @@ export default function FestivalPage() {
                 para toda la comunidad. Las presentaciones se realizarán en diversos espacios de la comuna de Buin,
                 incluyendo el Teatro Municipal, la Plaza de Armas y centros culturales.
               </p>
-              <div className="bg-red-50 border-l-4 border-red-600 p-4">
-                <h3 className="text-lg font-medium text-red-800">¡Mantente informado!</h3>
-                <p className="text-red-700">
-                  Suscríbete a nuestro newsletter para recibir actualizaciones sobre la programación y actividades del
-                  festival.
-                </p>
-                <div className="mt-4 flex">
-                  <input
-                    type="email"
-                    placeholder="Tu correo electrónico"
-                    className="flex-1 min-w-0 px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                  />
-                  <button
-                    type="button"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-r-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-                  >
-                    Suscribirse
-                  </button>
-                </div>
-              </div>
             </div>
 
             <div className="relative h-96">
