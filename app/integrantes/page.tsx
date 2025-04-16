@@ -107,7 +107,7 @@ export default function TeamPage() {
     <div className="bg-gray-50 min-h-screen">
       <div className="container mx-auto px-4 py-16">
         <SectionTitle
-          title="Equipos de trabajo en la compañía"
+          title="Equipo de trabajo en la compañía"
           subtitle="Conoce a las personas que hacen posible nuestro trabajo artístico"
         />
 
@@ -124,7 +124,7 @@ export default function TeamPage() {
         </div>
 
         <TeamSection title="Integrantes" members={Members}
-          description = "Estas son las personas que conforman el equipo de Compañia Entreparentesis.  Faltan tilde y una palabrita, cambiar por: 'Estas son las personas que conforman el equipo de la Compañía Entreparéntesis'."
+          description = "Estas son las personas que conforman el equipo de la Compañía Entreparéntesis."
         />
       </div>
     </div>

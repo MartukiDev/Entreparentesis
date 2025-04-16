@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="bg-white">
       <div className="relative h-[40vh]">
         <Image
-          src="/images/nosotros.jpg"
+          src="/images/nosotros_hero.jpg"
           alt="Equipo de Arte Entreparéntesis"
           fill
           className="object-cover"
