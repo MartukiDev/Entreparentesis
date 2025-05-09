@@ -101,4 +101,3 @@ export default function GalleryDetailPage({ params }: { params: { id: string } }
     </div>
   )
 }
-

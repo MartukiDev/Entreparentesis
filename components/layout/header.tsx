@@ -12,6 +12,7 @@ const navigation = [
   { name: "Integrantes", href: "/integrantes" },
   { name: "Festival de Teatro de Buin", href: "/festival" },
   { name: "Galerías", href: "/galerias" },
+  { name: "Radio", href: "/radio" },
   { name: "Contacto", href: "/contacto" },
 ]
 
@@ -95,4 +96,3 @@ export default function Header() {
     </header>
   )
 }
-
