@@ -20,7 +20,7 @@ export default function ContactPage() {
 
       <div className="flex space-x-8">
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/FestivaldeTeatrodeBuin"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-75 transition-opacity"
@@ -28,7 +28,7 @@ export default function ContactPage() {
           <Facebook className="h-11 w-11 text-gray-700" />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/artentreparentesis/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-75 transition-opacity"
