@@ -55,6 +55,16 @@ export default function FestivalPage() {
               Además de las funciones teatrales, el festival ofrecerá talleres, conversatorios y actividades paralelas para toda la comunidad. Las presentaciones
               se realizarán en diversos espacios de la comuna de Buin, incluyendo el Teatro Municipal, la Plaza de Armas y establecimientos educacionales.
               </p>
+              <div className="flex justify-center">
+                <a
+                  href="https://drive.google.com/drive/u/1/folders/1o8gMRkmT0qotWXrjGieaAVzcjOFqjBUY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition-colors"
+                >
+                  ¡Descarga las bases aquí!
+                </a>
+              </div>
             </div>
 
             <div className="relative h-96">
