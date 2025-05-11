@@ -64,6 +64,11 @@ const galleries = {
     })),
   },
 }
+export async function generateStaticParams() {
+  return Object.keys(galleries).map((id) => ({
+    id,
+  }))
+}
 
 export default function GalleryDetailPage({ params }: { params: { id: string } }) {
   const galleryId = params.id

@@ -442,6 +442,11 @@ const plays = {
   },
 }
 
+export async function generateStaticParams() {
+  return Object.keys(plays).map((id) => ({
+    id,
+  }))
+}
 // Add more plays as needed with the same structure
 
 export default function PlayDetailPage({ params }: { params: { id: string } }) {
