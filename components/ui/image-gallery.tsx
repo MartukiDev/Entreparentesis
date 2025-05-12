@@ -5,6 +5,8 @@ import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
+import ImageWithLoader from "@/components/ui/image-with-loader"
+
 
 interface GalleryImage {
   id: string | number
@@ -76,7 +78,7 @@ export default function ImageGallery({ images, columns = 3, gap = "medium" }: Im
             className="relative aspect-square overflow-hidden rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
             onClick={() => openLightbox(index)}
           >
-            <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+            <ImageWithLoader src={image.src || "/placeholder.svg"} alt={image.alt} />
           </div>
         ))}
       </div>

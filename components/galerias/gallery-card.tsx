@@ -1,5 +1,6 @@
-import Image from "next/image"
+"use client"
 import Link from "next/link"
+import ImageWithLoader from "@/components/ui/image-with-loader"
 
 interface GalleryCardProps {
   id: string
@@ -9,16 +10,21 @@ interface GalleryCardProps {
   imageCount: number
 }
 
-export default function GalleryCard({ id, title, coverImage, description, imageCount }: GalleryCardProps) {
+export default function GalleryCard({
+  id,
+  title,
+  coverImage,
+  description,
+  imageCount,
+}: GalleryCardProps) {
   return (
     <Link href={`/galerias/${id}`} className="block group">
       <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
         <div className="relative h-64">
-          <Image
+          {/* Usamos ImageWithLoader aquí */}
+          <ImageWithLoader
             src={coverImage || "/placeholder.svg"}
             alt={title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute bottom-0 right-0 bg-black bg-opacity-75 text-white px-3 py-1 text-sm">
             {imageCount} fotos
@@ -32,4 +38,5 @@ export default function GalleryCard({ id, title, coverImage, description, imageC
     </Link>
   )
 }
+
 

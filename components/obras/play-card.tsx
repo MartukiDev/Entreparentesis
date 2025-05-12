@@ -1,5 +1,6 @@
-import Image from "next/image"
+"use client"
 import Link from "next/link"
+import ImageWithLoader from "@/components/ui/image-with-loader"
 
 interface PlayCardProps {
   id: string
@@ -14,7 +15,7 @@ export default function PlayCard({ id, title, imageSrc, description, year, direc
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <div className="relative h-64">
-        <Image src={imageSrc || "/placeholder.svg"} alt={title} fill className="object-cover" />
+        <ImageWithLoader src={imageSrc || "/placeholder.svg"} alt={title} />
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
