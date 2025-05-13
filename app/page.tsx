@@ -41,8 +41,8 @@ export default function Home() {
               contactType: "customer service",
             },
             sameAs: [
-              "https://www.facebook.com/entreparentesis",
-              "https://www.instagram.com/entreparentesis",
+              "https://www.facebook.com/FestivaldeTeatrodeBuin",
+              "https://www.instagram.com/artentreparentesis",
               "https://twitter.com/entreparentesis",
             ],
           }),
@@ -53,7 +53,7 @@ export default function Home() {
         subtitle="Organizadores del Festival de Teatro de Buin"
         buttonText="Conócenos"
         buttonLink="/nosotros"
-        imageSrc="/images/hero-foto.jpeg"
+        imageSrc="/images/hero-foto.webp"
         imageAlt="Compañía de Teatro Entreparéntesis - Actores en escena"
       />
       <div className="py-16 bg-gray-50">

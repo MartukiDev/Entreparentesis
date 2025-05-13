@@ -32,7 +32,7 @@ export default function HeroSection({
             <div className="mt-8">
               <Link
                 href={buttonLink}
-                className="inline-block rounded-md border border-transparent bg-red-600 px-8 py-3 text-base font-medium text-white hover:bg-red-700 transition-colors duration-300"
+                className="inline-block rounded-md border border-transparent bg-green-600 px-8 py-3 text-base font-medium text-white hover:bg-green-700 transition-colors duration-300"
               >
                 {buttonText}
               </Link>

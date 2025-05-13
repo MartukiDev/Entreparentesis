@@ -6,19 +6,19 @@ const featuredPlays = [
   {
     id: 1,
     title: "Candado de Estrellas",
-    imageSrc: "/images/candado-de-estrellas.jpg",
+    imageSrc: "/images/candado-de-estrellas.webp",
     description: "Obra de Teatro que explora el daltonismo y la percepción del color.",
   },
   {
     id: 2,
     title: "Cuando la musica se acaba",
-    imageSrc: "/images/cuando-la-musica-se-acaba.jpg",
+    imageSrc: "/images/cuando-la-musica-se-acaba.webp",
     description: "Obra que habla de la importancia de las influencias musicales de los años 90.",
   },
   {
     id: 3,
     title: "¿Hay selva en chile?",
-    imageSrc: "/images/hay-selva-en-chile.jpg",
+    imageSrc: "/images/hay-selva-en-chile.webp",
     description: "Un avión cae en el sur de Chile y dos estudiantes junto a su profesor y piloto deben buscar la forma de sobrevivir.",
   },
   {
@@ -42,7 +42,7 @@ export default function FeaturedPlays() {
         <div className="text-center">
           <Link
             href="/obras"
-            className="inline-block rounded-md border border-transparent bg-red-600 px-8 py-3 text-base font-medium text-white hover:bg-red-700 transition-colors duration-300"
+            className="inline-block rounded-md border border-transparent bg-green-600 px-8 py-3 text-base font-medium text-white hover:bg-green-700 transition-colors duration-300"
           >
             Conoce nuestras obras
           </Link>

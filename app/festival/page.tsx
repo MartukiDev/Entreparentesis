@@ -8,19 +8,19 @@ const festivalEditions = [
   {
     id: 1,
     title: "XIV Festival de Teatro de Buin (2022)",
-    imageSrc: "/images/carrousel-festival/2022_1.jpg",
+    imageSrc: "/images/carrousel-festival/2022_1.webp",
     description: "14.ª edición del Festival de teatro de Buin."
   },
   {
     id: 2,
     title: "XV Festival de Teatro de Buin (2023)",
-    imageSrc: "/images/carrousel-festival/2023_1.jpg",
+    imageSrc: "/images/carrousel-festival/2023_1.webp",
     description: "15.ª edición del Festival de teatro de Buin.",
   },
   {
     id: 3,
     title: "XVI Festival de Teatro de Buin (2024)",
-    imageSrc: "/images/carrousel-festival/2024_1.jpg",
+    imageSrc: "/images/carrousel-festival/2024_1.webp",
     description: "16.ª edición del Festival de teatro de Buin.",
   },
 ]
@@ -31,7 +31,7 @@ export default function FestivalPage() {
       <HeroSection
         title="Festival de Teatro de Buin"
         subtitle="Un espacio para la creación y el encuentro teatral"
-        imageSrc="/images/festivaldeteatro.jpeg"
+        imageSrc="/images/festivaldeteatro.webp"
         imageAlt="Festival de Teatro de Buin"
       />
 
@@ -60,7 +60,7 @@ export default function FestivalPage() {
                   href="https://drive.google.com/drive/u/1/folders/1o8gMRkmT0qotWXrjGieaAVzcjOFqjBUY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition-colors"
+                  className="inline-block mt-4 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition-colors"
                 >
                   ¡Descarga las bases aquí!
                 </a>
@@ -69,7 +69,7 @@ export default function FestivalPage() {
 
             <div className="relative h-96">
               <Image
-                src="/images/foto-section-festival.jpeg"
+                src="/images/foto-section-festival.webp"
                 alt="Afiche del VI Festival de Teatro de Buin"
                 fill
                 className="object-contain"

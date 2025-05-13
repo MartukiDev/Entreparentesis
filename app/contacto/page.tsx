@@ -12,7 +12,7 @@ export default function ContactPage() {
       </p>
       <a
         href="mailto:contacto@entreparentesis.cl"
-        className="text-red-600 text-lg md:text-xl font-medium flex items-center justify-center gap-3 mb-10"
+        className="text-green-600 text-lg md:text-xl font-medium flex items-center justify-center gap-3 mb-10"
       >
         <Mail className="h-6 w-6" />
         contacto@entreparentesis.cl
@@ -23,7 +23,7 @@ export default function ContactPage() {
           href="https://www.facebook.com/FestivaldeTeatrodeBuin"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:opacity-75 transition-opacity"
+          className="p-1 rounded-lg bg-green-600 hover:opacity-75 transition-opacity"
         >
           <Facebook className="h-11 w-11 text-gray-700" />
         </a>
@@ -31,7 +31,7 @@ export default function ContactPage() {
           href="https://www.instagram.com/artentreparentesis/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:opacity-75 transition-opacity"
+          className="p-1 rounded-lg bg-green-600 hover:opacity-75 transition-opacity"
         >
           <Instagram className="h-11 w-11 text-gray-700" />
         </a>

@@ -10,7 +10,7 @@ const plays = {
     title: "El orden de los factores no altera el producto",
     year: "2002",
     director: " Lía D’acosta",
-    coverImage: "/images/obras/elorden.jpg",
+    coverImage: "/images/obras/elorden.webp",
     description:
       "Primer montaje creado por la Compañía,estrenada en el 2002. Reflejaban la vida acelerada y liberal que llevan algunas jóvenes en la búsqueda de su identidad",
     fullDescription: [
@@ -27,7 +27,7 @@ const plays = {
     title: "Suicidas",
     year: "2004",
     director: " Lía D’acosta",
-    coverImage: "/images/obras/suicidas.jpg",
+    coverImage: "/images/obras/suicidas.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -45,7 +45,7 @@ const plays = {
     title: "Elena",
     year: "2005",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/elena.jpg",
+    coverImage: "/images/obras/elena.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -67,7 +67,7 @@ const plays = {
     title: "Otra vez y una vez",
     year: "2007",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/otravez.jpg",
+    coverImage: "/images/obras/otravez.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -86,7 +86,7 @@ const plays = {
     title: "Lázare veni foras",
     year: "2009",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/lazare.jpg",
+    coverImage: "/images/obras/lazare.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -106,7 +106,7 @@ const plays = {
     title: "El ultimo de los mohicanos",
     year: "2012",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/mohicanos.jpg",
+    coverImage: "/images/obras/mohicanos.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -125,7 +125,7 @@ const plays = {
     title: "El trastorno de Dalton",
     year: "2016",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/trastorno de dalton.jpg",
+    coverImage: "/images/obras/trastorno de dalton.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -143,7 +143,7 @@ const plays = {
     title: "El Soundtrack de Hamlet",
     year: "2018",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/hamlet.jpg",
+    coverImage: "/images/obras/hamlet.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -164,7 +164,7 @@ const plays = {
     title: "Cuando la musica se acaba",
     year: "2018",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/cuandolamusica.jpg",
+    coverImage: "/images/obras/cuandolamusica.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -184,7 +184,7 @@ const plays = {
     title: "El Dia que cierre",
     year: "2008",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/eldiaque.jpg",
+    coverImage: "/images/obras/eldiaque.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -205,7 +205,7 @@ const plays = {
     title: "Wachinango",
     year: "2011",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/wachinango.jpg",
+    coverImage: "/images/obras/wachinango.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -225,7 +225,7 @@ const plays = {
     title: "Chilebasura",
     year: "2013",
     director: "Lía D´acosta",
-    coverImage: "/images/obras/chilebasura.jpg",
+    coverImage: "/images/obras/chilebasura.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -244,7 +244,7 @@ const plays = {
     title: "Maribel el misterio de los tulipanes",
     year: "2010",
     director: "Lía D´acosta",
-    coverImage: "/images/obras/maribel.jpg",
+    coverImage: "/images/obras/maribel.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -264,7 +264,7 @@ const plays = {
     title: "Candado de estrellas",
     year: "2016",
     director: "Lía D´acosta",
-    coverImage: "/images/obras/candado.jpg",
+    coverImage: "/images/obras/candado.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -282,7 +282,7 @@ const plays = {
     title: "Un cuento olvidado",
     year: "2019",
     director: "Lía D´acosta",
-    coverImage: "/images/obras/uncuentoolvidado.jpg",
+    coverImage: "/images/obras/uncuentoolvidado.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -302,7 +302,7 @@ const plays = {
     title: "Hay selva en Chile",
     year: "2017",
     director: "Lia D´acosta",
-    coverImage: "/images/obras/selva.jpg",
+    coverImage: "/images/obras/selva.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -321,7 +321,7 @@ const plays = {
     title: "Sin tiempo",
     year: "2019",
     director: "Lía D´acosta",
-    coverImage: "/images/obras/sintiempo.jpg",
+    coverImage: "/images/obras/sintiempo.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -341,7 +341,7 @@ const plays = {
     title: "Travulewén",
     year: "2014",
     director: "Lía D´acosta",
-    coverImage: "/images/obras/travuwelen.jpg",
+    coverImage: "/images/obras/travuwelen.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -361,7 +361,7 @@ const plays = {
     title: "Kütraltun",
     year: "2015",
     director: "Lía D´acosta",
-    coverImage: "/images/obras/kutraltun.jpg",
+    coverImage: "/images/obras/kutraltun.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -381,7 +381,7 @@ const plays = {
     title: "El hombre y la lluvia",
     year: "2017",
     director: "Rolando Collinao Miranda",
-    coverImage: "/images/obras/elhombre.jpg",
+    coverImage: "/images/obras/elhombre.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -401,7 +401,7 @@ const plays = {
     title: "Angë Pangue",
     year: "2022",
     director: "Rolando Collinao Miranda",
-    coverImage: "/images/obras/angue.jpg",
+    coverImage: "/images/obras/angue.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [
@@ -422,7 +422,7 @@ const plays = {
     title: "Noctivaga",
     year: "2024",
     director: "Lía D’acosta",
-    coverImage: "/images/obras/noctivaga.jpg",
+    coverImage: "/images/obras/noctivaga.webp",
     description:
       "Nuestra adaptación contemporánea de la última obra completa de William Shakespeare. Una historia de perdón, redención y magia que transporta al espectador a una isla misteriosa donde nada es lo que parece. Incorporamos elementos multimedia y efectos especiales para crear una experiencia inmersiva.",
     fullDescription: [

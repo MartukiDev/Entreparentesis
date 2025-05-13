@@ -11,7 +11,6 @@ export const metadata = {
   title: "Arte Entreparéntesis - Compañía de Teatro de Buin",
   description:
     "Compañía de teatro dedicada a descentralizar el arte teatral y hacerlo accesible para todos en Buin y sus alrededores.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
