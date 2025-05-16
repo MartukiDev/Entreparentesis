@@ -88,7 +88,7 @@ export default function ImageGallery({ images, columns = 3, gap = "medium" }: Im
         <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors"
+            className="absolute top-4 right-4 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors z-[60]"
             aria-label="Cerrar"
           >
             <X className="h-6 w-6" />
@@ -96,7 +96,7 @@ export default function ImageGallery({ images, columns = 3, gap = "medium" }: Im
 
           <button
             onClick={goToPrevious}
-            className="absolute left-4 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors"
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors z-[60]"
             aria-label="Anterior"
           >
             <ChevronLeft className="h-6 w-6" />
@@ -104,13 +104,13 @@ export default function ImageGallery({ images, columns = 3, gap = "medium" }: Im
 
           <button
             onClick={goToNext}
-            className="absolute right-4 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-70 transition-colors z-[60]"
             aria-label="Siguiente"
           >
             <ChevronRight className="h-6 w-6" />
           </button>
 
-          <div className="relative w-[90vw] h-[80vh] md:w-[80vw] md:h-[80vh]">
+          <div className="relative w-[90vw] h-[80vh] md:w-[80vw] md:h-[80vh] z-[55]">
             <Image
               src={images[selectedImage].src || "/placeholder.svg"}
               alt={images[selectedImage].alt}
