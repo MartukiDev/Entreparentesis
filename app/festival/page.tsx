@@ -2,6 +2,7 @@ import Image from "next/image"
 import HeroSection from "@/components/ui/hero-section"
 import SectionTitle from "@/components/ui/section-title"
 import Carousel from "@/components/ui/carousel"
+import CarouselVertical from "@/components/ui/carousel-vertical"
 
 // This would typically come from a database or CMS
 const festivalEditions = [
@@ -25,6 +26,45 @@ const festivalEditions = [
   },
 ]
 
+// Images for the vertical carousel in the announcement section
+const festivalImages = [
+  {
+    id: 1,
+    title: "Festival 2025 - Imagen 1",
+    imageSrc: "/images/carrousel-festival-section/1.webp",
+  },
+  {
+    id: 2,
+    title: "Festival 2025 - Imagen 2",
+    imageSrc: "/images/carrousel-festival-section/2.webp",
+  },
+  {
+    id: 3,
+    title: "Festival 2025 - Imagen 3",
+    imageSrc: "/images/carrousel-festival-section/3.webp",
+  },
+  {
+    id: 4,
+    title: "Festival 2025 - Imagen 4",
+    imageSrc: "/images/carrousel-festival-section/4.webp",
+  },
+  {
+    id: 5,
+    title: "Festival 2025 - Imagen 5",
+    imageSrc: "/images/carrousel-festival-section/5.webp",
+  },
+  {
+    id: 6,
+    title: "Festival 2025 - Imagen 6",
+    imageSrc: "/images/carrousel-festival-section/6.webp",
+  },
+  {
+    id: 7,
+    title: "Festival 2025 - Imagen 7",
+    imageSrc: "/images/carrousel-festival-section/7.webp",
+  },
+]
+
 export default function FestivalPage() {
   return (
     <div className="bg-white">
@@ -38,41 +78,38 @@ export default function FestivalPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <SectionTitle
-            title="Próxima Edición: DÉCIMO SÉPTIMO FESTIVAL DE TEATRO DE BUIN 2025"
+            title="🎭 XVII Festival de Teatro de Buin - 2025 🎭"
             subtitle="Desde el 14 al 18 de octubre."
           />
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-            <div>
-              <p className="text-gray-600 mb-6">
-              Nos complace anunciar que las Bases del Décimo Séptimo Festival de Teatro de Buin, 
-              serán lanzadas en el contexto del Día Nacional del Teatro, que celebraremos con un 
-              Seminario de Dramaturgia y la presentación de una de nuestras obras de teatro mapuche: 
-              El hombre y la lluvia.  Este año, como cada año participarán 10 compañías teatrales de Chile,
-              presentando una variada programación. 
+          <div className="grid md:grid-cols-2 gap-12 items-center justify-center mb-12 max-w-6xl mx-auto">
+            <div className="text-center md:text-left">
+              <p className="text-gray-600 mb-6 text-justify">
+               Nos emociona anunciar que este año se celebrará la 17ª edición del Festival de Teatro de Buin, 
+               un espacio que reúne lo mejor de las artes escénicas en la zona sur de la Región Metropolitana. 
               </p>
-              <p className="text-gray-600 mb-6">
-              Además de las funciones teatrales, el festival ofrecerá talleres, conversatorios y actividades paralelas para toda la comunidad. Las presentaciones
-              se realizarán en diversos espacios de la comuna de Buin, incluyendo el Teatro Municipal, la Plaza de Armas y establecimientos educacionales.
+              <p className="text-gray-600 mb-6 text-justify">
+              Agradecemos profundamente a todas las compañías que postularon sus montajes. Actualmente, estamos en proceso de evaluación y curaduría de las obras.
+              📬 Les recordamos que las respuestas oficiales serán enviadas directamente al correo electrónico registrado en la postulación.
               </p>
-              <div className="flex justify-center">
-                <a
-                  href="https://drive.google.com/drive/u/1/folders/1o8gMRkmT0qotWXrjGieaAVzcjOFqjBUY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-4 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition-colors"
-                >
-                  ¡Descarga las bases aquí!
-                </a>
-              </div>
+              <p className="text-gray-600 mb-6 text-justify">
+              A su derecha, encontrará fotos de montajes teatrales que participaron en ediciones anteriores del Festival de Teatro de Buin.
+              Reviva algunos de los momentos más destacados y sienta la esencia de nuestro escenario.
+              </p>
+              <p className="text-gray-600 mb-6 text-justify">
+              ¡Estén atentos y atentas! Muy pronto compartiremos más novedades de esta gran fiesta teatral.
+              </p>
+
+             
             </div>
 
-            <div className="relative h-96">
-              <Image
-                src="/images/foto-section-festival.webp"
-                alt="Afiche del VI Festival de Teatro de Buin"
-                fill
-                className="object-contain"
+            <div className="flex justify-center">
+              <CarouselVertical 
+                items={festivalImages} 
+                autoPlay={true}
+                interval={4000}
+                showControls={true}
+                showIndicators={true}
               />
             </div>
           </div>
