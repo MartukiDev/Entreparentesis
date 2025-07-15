@@ -99,8 +99,6 @@ export default function FestivalPage() {
               <p className="text-gray-600 mb-6 text-justify">
               ¡Estén atentos y atentas! Muy pronto compartiremos más novedades de esta gran fiesta teatral.
               </p>
-
-             
             </div>
 
             <div className="flex justify-center">
@@ -118,26 +116,22 @@ export default function FestivalPage() {
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <SectionTitle title="Historia del Festival" />
+          <SectionTitle title="¿QUÉ ES EL FESTIVAL DE TEATRO DE BUIN?" />
 
-          <div className="max-w-3xl mx-auto mb-16">
+          <div className="max-w-3xl mx-auto mb-32 text-justify">
             <p className="text-gray-600 mb-4">
-              El Festival de Teatro de Buin nació en 2018 como una iniciativa de la Compañía Arte Entreparéntesis para
-              crear un espacio de encuentro, difusión y formación teatral en la zona sur de la Región Metropolitana. Lo
-              que comenzó como un pequeño evento local con cinco compañías participantes, se ha convertido en un
-              referente cultural que atrae a artistas y público de todo el país.
+              La gran fiesta cultural y artística de Buin. Itinerancia teatral con talleres y presentaciones en las localidades de Valdivia de Paine, Viluco, Linderos, Alto Jahuel y Maipo. Durante 5 días se reúnen más de 200 artistas y se realiza la competencia: 7 obras teatrales seleccionadas de 50 compañías postulantes compiten por el preciado 
+              galardón de ‘Mejor Compañía del Certamen’ y ‘Mejor actriz o actor’, además se presentan 3 compañías teatrales invitadas y artistas musicales locales, entre otros. 
             </p>
+            <h1 className="text-xl font-bold text-gray-900 mb-4 text-center">¿Quién organiza el festival?</h1>
             <p className="text-gray-600 mb-4">
-              A lo largo de sus cinco ediciones anteriores, el festival ha presentado más de 60 obras de teatro, ha
-              realizado más de 20 talleres formativos y ha convocado a un público estimado de 15.000 personas. Además,
-              ha generado importantes vínculos con instituciones educativas, organizaciones culturales y empresas
-              locales, creando una red de colaboración que fortalece el desarrollo cultural de la comuna.
+              La compañía de Teatro Entreparéntesis, una organización sin fines de lucro con 22 años de trayectoria y más de 30 montajes teatrales estrenados. La Compañía de Teatro Entreparéntesis es una entidad reconocida por su labor y gestión cultural,
+              siendo referentes dentro del mundo del teatro con vocación social.
             </p>
+            <h1 className="text-xl font-bold text-gray-900 mb-4 text-center">¿Dónde se realiza?</h1>
             <p className="text-gray-600">
-              El festival se ha adaptado a diversos desafíos, incluyendo la realización de una edición completamente
-              virtual durante la pandemia en 2020, demostrando su capacidad de innovación y resiliencia. Cada año,
-              buscamos ampliar nuestro alcance y mejorar la experiencia tanto para los artistas participantes como para
-              el público asistente.
+              En el teatro, hall y explanada del Centro Cultural de Buin. Y la Itinerancia teatral en escuelas y juntas de vecinos de Valdivia de Paine, Viluco, Linderos, Alto Jahuel y Maipo. El teatro del Centro Cultural de Buin 
+              tiene un escenario de 20 metros cuadrados, y 645 butacas. Además de un equipo técnico de sonido e iluminación de alta calidad.
             </p>
           </div>
 
