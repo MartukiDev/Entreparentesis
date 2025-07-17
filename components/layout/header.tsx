@@ -25,8 +25,8 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Arte Entreparéntesis</span>
-            <h1 className="text-2xl font-bold tracking-tight text-gray-900">Arte Entreparéntesis</h1>
+            <span className="sr-only">Entreparéntesis</span>
+            <h1 className="text-2xl font-bold tracking-tight text-gray-900">Entreparéntesis</h1>
           </Link>
         </div>
         <div className="flex lg:hidden">

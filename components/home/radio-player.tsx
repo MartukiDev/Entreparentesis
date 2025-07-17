@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function RadioPlayer() {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Radio Arte Entreparéntesis</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">Radio Entreparéntesis</h2>
       <p className="text-gray-600 mb-6 text-center">Escucha nuestra programación cultural y artística en vivo</p>
 
       <div className="aspect-video w-full mb-6">
