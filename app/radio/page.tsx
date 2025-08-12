@@ -5,7 +5,7 @@ import Script from "next/script"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Radio | Arte Entreparéntesis",
+  title: "Radio | Entreparéntesis",
   description:
     "Escucha nuestra radio online con programas culturales y artísticos producidos por Arte Entreparéntesis.",
   alternates: {
@@ -72,7 +72,7 @@ export default function RadioPage() {
       />
       <div className="container mx-auto px-4 py-16">
         <SectionTitle
-          title="Radio Arte Entreparéntesis"
+          title="Radio Entreparéntesis"
           subtitle="Escucha nuestra programación musical y cultural en vivo"
         />
 
