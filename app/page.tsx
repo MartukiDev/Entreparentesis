@@ -27,7 +27,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": ["TheaterGroup", "PerformingGroup", "Organization"],
             name: "Compañía de Teatro Entreparéntesis",
-            alternateName: ["Teatro Entreparéntesis", "Entreparéntesis Teatro", "Compañía Entreparéntesis", "Arte Entreparéntesis"],
+            alternateName: ["Teatro Entreparéntesis", "Entreparéntesis Teatro", "Compañía Entreparéntesis"],
             url: "https://www.entreparentesis.cl",
             logo: "https://www.entreparentesis.cl/images/hero-foto.webp",
             description:

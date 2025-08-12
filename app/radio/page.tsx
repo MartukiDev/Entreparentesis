@@ -7,7 +7,7 @@ import Image from "next/image"
 export const metadata: Metadata = {
   title: "Radio | Entreparéntesis",
   description:
-    "Escucha nuestra radio online con programas culturales y artísticos producidos por Arte Entreparéntesis.",
+    "Escucha nuestra radio online con programas culturales y artísticos producidos por Entreparéntesis.",
   alternates: {
     canonical: "/radio",
   },
@@ -55,14 +55,14 @@ export default function RadioPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "RadioStation",
-            name: "Radio Arte Entreparéntesis",
+            name: "Radio Entreparéntesis",
             url: "https://www.entreparentesis.cl/radio",
             contentUrl: "https://sp.totalstreaming.net/cp/widgets/player/single/?p=8044",
-            broadcastDisplayName: "Radio Arte Entreparéntesis",
+            broadcastDisplayName: "Radio Entreparéntesis",
             broadcastTimezone: "America/Santiago",
             broadcaster: {
               "@type": "Organization",
-              name: "Arte Entreparéntesis",
+              name: "Entreparéntesis",
               url: "https://www.entreparentesis.cl",
             },
             inLanguage: "es-CL",
@@ -84,7 +84,7 @@ export default function RadioPage() {
           <div className="flex justify-center mb-8">
             <Image
               src="/images/logoradio.webp"
-              alt="Logo Radio Arte Entreparéntesis"
+              alt="Logo Radio Entreparéntesis"
               width={300}
               height={150}
               className="rounded-lg shadow-md"
@@ -95,7 +95,7 @@ export default function RadioPage() {
               <iframe
                 src="https://sp.totalstreaming.net/cp/widgets/player/single/?p=8044"
                 className="w-full border-0 h-[110px]"
-                title="Radio Arte Entreparéntesis - Reproductor"
+                title="Radio Entreparéntesis - Reproductor"
                 allow="autoplay"
                 loading="lazy"
               ></iframe>

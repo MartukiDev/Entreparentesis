@@ -113,7 +113,7 @@ export default function TeamPage() {
 
         <div className="max-w-3xl mx-auto mb-16">
           <p className="text-gray-600 mb-4">
-            En Arte Entreparéntesis creemos en el trabajo colaborativo y multidisciplinario. Nuestro equipo está formado
+            En Entreparéntesis creemos en el trabajo colaborativo y multidisciplinario. Nuestro equipo está formado
             por profesionales y entusiastas del teatro con diversas formaciones y especialidades.
           </p>
           <p className="text-gray-600">

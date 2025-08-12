@@ -10,7 +10,7 @@ export default function RadioPlayer() {
         <iframe
           src="https://sp.totalstreaming.net/cp/widgets/player/single/?p=8044"
           className="w-full h-full border-0 rounded-md"
-          title="Radio Arte Entreparéntesis - Reproductor"
+          title="Radio Entreparéntesis - Reproductor"
           allow="autoplay"
           loading="lazy"
         ></iframe>

@@ -16,7 +16,7 @@ export default function AboutPage() {
       <div className="relative h-[40vh]">
         <Image
           src="/images/nosotros_hero.webp"
-          alt="Equipo de Arte Entreparéntesis"
+          alt="Equipo de Entreparéntesis"
           fill
           className="object-cover"
           priority

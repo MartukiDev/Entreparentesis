@@ -9,11 +9,11 @@ const mainNavigation = [
   { name: "Inicio", href: "/" },
   { name: "Nosotros", href: "/nosotros" },
   { name: "Integrantes", href: "/integrantes" },
+  { name: "Festival de Teatro de Buin", href: "/festival" },
 ]
 
 const teatroNavigation = [
   { name: "Obras de Teatro", href: "/obras" },
-  { name: "Festival de Teatro de Buin", href: "/festival" },
   { name: "Galerías", href: "/galerias" },
 ]
 
@@ -203,7 +203,7 @@ export default function Header() {
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
-                <span className="sr-only">Arte Entreparéntesis</span>
+                <span className="sr-only">Entreparéntesis</span>
                 <h2 className="text-xl font-bold text-gray-900">Entreparéntesis</h2>
               </Link>
               <button
