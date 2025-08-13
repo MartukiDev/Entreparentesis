@@ -42,7 +42,15 @@ const radioSections = [
     schedule: "Jueves 15:00 PM",
     linkfanpage: "https://www.facebook.com/profile.php?id=61576338838446&rdid=fwzJZP31IDM9VB4B&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BRziiuQJF%2F"
   },
-  
+  {
+    id: "retratarte",
+    title: "RetratArte",
+    imageSrc: "/images/retratarte.webp",
+    description:
+      "Entrevistamos a artistas para conocer su persona y sus creaciones, para filosofar sobre el arte y la cultura. Un espacio entretenido de conversación para registrar el pensamiento de los creadores contemporáneos. Conducido por Lía D'acosta, por Radio Entreparéntesis",
+    schedule: "Martes 13:00 PM",
+    linkfanpage: "https://www.instagram.com/artentreparentesis/"
+  },
 ]
 
 export default function RadioPage() {
