@@ -27,42 +27,44 @@ const festivalEditions = [
   },
 ]
 
-// Images for the vertical carousel in the announcement section
-const festivalImages = [
+// Images for the vertical carousel (without _h suffix)
+const festivalImagesVertical = [
   {
     id: 1,
     title: "Festival 2025 - Imagen 1",
-    imageSrc: "/images/carrousel-festival-section/1.webp",
+    imageSrc: "/images/festival/1.webp",
   },
   {
     id: 2,
-    title: "Festival 2025 - Imagen 2",
-    imageSrc: "/images/carrousel-festival-section/2.webp",
+    title: "Festival 2025 - Imagen 3",
+    imageSrc: "/images/festival/3.webp",
   },
   {
     id: 3,
-    title: "Festival 2025 - Imagen 3",
-    imageSrc: "/images/carrousel-festival-section/3.webp",
-  },
-  {
-    id: 4,
-    title: "Festival 2025 - Imagen 4",
-    imageSrc: "/images/carrousel-festival-section/4.webp",
-  },
-  {
-    id: 5,
-    title: "Festival 2025 - Imagen 5",
-    imageSrc: "/images/carrousel-festival-section/5.webp",
-  },
-  {
-    id: 6,
     title: "Festival 2025 - Imagen 6",
-    imageSrc: "/images/carrousel-festival-section/6.webp",
+    imageSrc: "/images/festival/6.webp",
+  },
+]
+
+// Images for the horizontal carousel (with _h suffix)
+const festivalImagesHorizontal = [
+  {
+    id: 1,
+    title: "Tappabuchi - Academia de tontos",
+    imageSrc: "/images/festival/2_h.webp",
+    description: "XVII Festival de Teatro de Buin 2025"
   },
   {
-    id: 7,
-    title: "Festival 2025 - Imagen 7",
-    imageSrc: "/images/carrousel-festival-section/7.webp",
+    id: 2,
+    title: "Cabra de monte - Colectivo Desalambrado",
+    imageSrc: "/images/festival/4_h.webp",
+    description: "XVII Festival de Teatro de Buin 2025"
+  },
+  {
+    id: 3,
+    title: "El mejor pais de Chile - Entreparentesis",
+    imageSrc: "/images/festival/5_h.webp",
+    description: "XVII Festival de Teatro de Buin 2025"
   },
 ]
 
@@ -116,31 +118,34 @@ export default function FestivalPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center justify-center mb-12 max-w-6xl mx-auto">
               <div className="text-center md:text-left">
                 <p className="text-gray-600 mb-6 text-justify">
-                 Nos emociona anunciar que este año se celebrará la 17ª edición del Festival de Teatro de Buin, 
-                 un espacio que reúne lo mejor de las artes escénicas en la zona sur de la Región Metropolitana. 
+                  En octubre del 2025 celebramos la 17ª versión del Festival de Teatro de Buin, se realizó una itinerancia por 5 localidades de la comuna: Alto Jahuel, Maipo, Viluco, Valdivia de Paine y El Recurso, presentando la obra Ülkan Mapu (Montaje que enseña sobre los instrumentos musicales mapuche y su origen) a cientos de niños, que quedaron felices con la experiencia.
                 </p>
                 <p className="text-gray-600 mb-6 text-justify">
-                Agradecemos profundamente a todas las compañías que postularon sus montajes. Actualmente, estamos en proceso de evaluación y curaduría de las obras.
-                📬 Les recordamos que las respuestas oficiales serán enviadas directamente al correo electrónico registrado en la postulación.
+                  También se realizó el Pasacalle para dar el punta pie inicial a la Competencia y Presentaciones en el Teatro del Centro Cultural de Buin. En la alegría de la Plaza de Buin, el público disfrutó de la música, el malabarismo y el baile.
                 </p>
                 <p className="text-gray-600 mb-6 text-justify">
-                A su derecha, encontrará fotos de montajes teatrales que participaron en ediciones anteriores del Festival de Teatro de Buin.
-                Reviva algunos de los momentos más destacados y sienta la esencia de nuestro escenario.
+                  En un nivel de excelencia se presentaron las 7 obras en competencia, dejando al público maravillado con la belleza de los montajes y las emocionantes actuaciones. Además, la Compañía Entreparéntesis como anfitriones estrenaron su nueva obra: El mejor País de Chile, con la que comenzará pronto su recorrido por la Provincia, y la obra ganadora del año pasado dio un cierre perfecto a las 5 jornadas de Festival.
                 </p>
                 <p className="text-gray-600 mb-6 text-justify">
-                ¡Estén atentos y atentas! Muy pronto compartiremos más novedades de esta gran fiesta teatral.
+                  La fiesta cultural de Buin, una vez más dejó al público encantado y lleno de mensajes profundos, junto a la música de los artistas invitados que cada día amenizaban con sus creaciones musicales el espectáculo. Una fiesta única, sin igual, que es parte de la amplia gama cultural artística de nuestra comuna.
                 </p>
               </div>
 
               <div className="flex justify-center">
                 <CarouselVertical 
-                  items={festivalImages} 
+                  items={festivalImagesVertical} 
                   autoPlay={true}
                   interval={4000}
                   showControls={true}
                   showIndicators={true}
                 />
               </div>
+            </div>
+
+            {/* Carrusel horizontal de imágenes del festival */}
+            <div className="mb-12">
+              <SectionTitle title="Galería del Festival 2025" />
+              <Carousel items={festivalImagesHorizontal} />
             </div>
           </div>
         </section>
