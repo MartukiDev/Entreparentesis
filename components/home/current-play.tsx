@@ -1,7 +1,15 @@
 import Image from "next/image"
 import SectionTitle from "@/components/ui/section-title"
+import { getCurrentPlay } from "@/lib/cms/public"
+import { resolvePublicImage } from "@/lib/cms/media"
 
-export default function CurrentPlay() {
+export default async function CurrentPlay() {
+  const play = await getCurrentPlay()
+
+  if (!play) {
+    return null
+  }
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -10,32 +18,30 @@ export default function CurrentPlay() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="relative h-96">
             <Image
-              src="/galery/angue-pangue/41.webp"
-              alt="Obra Actual: Angë Pangue"
+              src={resolvePublicImage(play.cover_image_path, "/placeholder.svg")}
+              alt={`Obra Actual: ${play.title}`}
               fill
               className="object-contain rounded-lg"
             />
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Angë Pangue</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">{play.title}</h3>
             <p className="text-gray-600 mb-6 text-justify">
-            Esta obra, dirigida por Rolando Collinao, forma parte de su saga de creaciones teatrales inspiradas en la cultura mapuche. Tras un profundo estudio de sus formas narrativas, mitología, cosmovisión y representaciones orales como el epew y el piam, Collinao ha desarrollado una serie de montajes que no solo abordan temáticas mapuche, sino que también incorporan en su estructura la visión artística de este pueblo originario. Así, este montaje se presenta como una experiencia distinta,
-            donde el espectador se integra a un rito que permite conocer, desde una perspectiva íntima,
-            la riqueza cultural de los territorios que habitamos.
+              {play.description || "Esta obra forma parte de la cartelera actual de la compañía."}
             </p>
             <div className="space-y-2">
               <p className="text-gray-800">
-                <strong>Dirección:</strong> Lía D´acosta.
+                <strong>Dirección:</strong> {play.director}
               </p>
               <p className="text-gray-800">
-                <strong>Elenco:</strong>  María José, Exequiel, Franco, Karla, Fran.
+                <strong>Elenco:</strong> {play.cast || "Por confirmar"}
               </p>
               <p className="text-gray-800">
-                <strong>Funciones:</strong> Por definir.
+                <strong>Funciones:</strong> {play.show_dates || "Por definir"}
               </p>
               <p className="text-gray-800">
-                <strong>Lugar:</strong> Por definir.
+                <strong>Lugar:</strong> {play.location || "Por definir"}
               </p>
             </div>
           </div>

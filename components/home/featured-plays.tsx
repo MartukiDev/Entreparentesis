@@ -1,35 +1,18 @@
 import Link from "next/link"
 import SectionTitle from "@/components/ui/section-title"
 import Carousel from "@/components/ui/carousel"
+import { getFeaturedPlays } from "@/lib/cms/public"
+import { resolvePublicImage } from "@/lib/cms/media"
 
-const featuredPlays = [
-  {
-    id: 1,
-    title: "Candado de Estrellas",
-    imageSrc: "/images/candado-de-estrellas.webp",
-    description: "Obra de Teatro que explora el daltonismo y la percepción del color.",
-  },
-  {
-    id: 2,
-    title: "Cuando la musica se acaba",
-    imageSrc: "/images/cuando-la-musica-se-acaba.webp",
-    description: "Obra que habla de la importancia de las influencias musicales de los años 90.",
-  },
-  {
-    id: 3,
-    title: "¿Hay selva en chile?",
-    imageSrc: "/images/hay-selva-en-chile.webp",
-    description: "Un avión cae en el sur de Chile y dos estudiantes junto a su profesor y piloto deben buscar la forma de sobrevivir.",
-  },
-  {
-    id: 4,
-    title: "Foto-Síntesis",
-    imageSrc: "/images/foto-sintesis.webp",
-    description: "Veronica y su encrucijada por el viaje en el tiempo.",
-  },
-]
+export default async function FeaturedPlays() {
+  const plays = await getFeaturedPlays()
+  const featuredPlays = plays.map((play) => ({
+    id: play.slug,
+    title: play.title,
+    imageSrc: resolvePublicImage(play.cover_image_path, "/placeholder.svg"),
+    description: play.description || "Sin descripción",
+  }))
 
-export default function FeaturedPlays() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-1">

@@ -3,29 +3,17 @@ import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User, ArrowLeft } from "lucide-react"
 import { notFound } from "next/navigation"
-
-// Datos de noticias (normalmente vendrían de una base de datos)
-const noticias = [
-  {
-    id: 1,
-    titulo: "Itinerancia del Festival de Teatro de Buin.",
-    fecha: "2025-08-09",
-    autor: "Lía D'acosta.",
-    imagen: "/images_noticias/1.webp",
-    resumen: "Desde el año 2023 que la Entreparéntesis se la ha jugado para que el Festival de Teatro de Buin con el afán de descentralizar tenga la previa de una Itinerancia por las localidades de la comuna de Buin. En el 2023 sólo talleres, pero ya el año 2024 también presentaciones teatrales, y este año 2025, volverá la Itinerancia con taller y teatro desde el 29 de septiembre al 03 de octubre.",
-    contenido: "La penúltima semana antes del Festival, se realizará la Itinerancia por las localidades de la comuna de Buin. Queriendo llevar el teatro a todos los rincones el recorrido tendrá los siguientes puntos de encuentro: \n- Villa Tierras del Maipo\n- Villa JM Carrera, Alto Jahuel\n- Escuela Los aromos del Recurso \n- Escuela Valdivia de Paine\n- Escuela Viluco.\n\nSe realizará un taller educativo abierto a la comunidad, donde conocerán lo esencial de las técnicas de actuación, como iniciación, y podrán apreciar de forma gratuita la presentación de la obra teatral: \"Ülkan Mapu\", que enseña sobre los instrumentos musicales mapuche y su origen. Un entretenido montaje para toda la familia. \n\nAsí que ya lo sabes si perteneces a estos lugares, infórmate y difunde por tu comunidad, el teatro llega a Buin de forma gratuita, como parte de esta hermosa fiesta cultural, el certamen de las artes escénicas, el XVII Festival de Teatro de Buin 2025."
-  },
-]
+import { getNewsBySlug, getPublishedNews } from "@/lib/cms/public"
+import { resolvePublicImage } from "@/lib/cms/media"
 
 export async function generateStaticParams() {
-  return noticias.map((noticia) => ({
-    id: noticia.id.toString(),
-  }))
+  const cmsNews = await getPublishedNews()
+  return cmsNews.map((noticia) => ({ id: noticia.slug }))
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params
-  const noticia = noticias.find(n => n.id === parseInt(id))
+  const noticia = await getNewsBySlug(id)
   
   if (!noticia) {
     return {
@@ -34,21 +22,21 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   }
 
   return {
-    title: `${noticia.titulo} | Noticias Entreparéntesis`,
-    description: noticia.resumen,
-    keywords: `${noticia.titulo}, noticias teatro, Festival de Teatro de Buin, Compañía Entreparéntesis`,
+    title: `${noticia.title || "Noticia"} | Noticias Entreparéntesis`,
+    description: noticia.summary,
+    keywords: `${noticia.title}, noticias teatro, Festival de Teatro de Buin, Compañía Entreparéntesis`,
   }
 }
 
 export default async function NoticiaPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const noticia = noticias.find(n => n.id === parseInt(id))
+  const noticia = (await getNewsBySlug(id)) || null
 
   if (!noticia) {
     notFound()
   }
 
-  const fechaFormateada = new Date(noticia.fecha).toLocaleDateString('es-ES', {
+  const fechaFormateada = new Date(noticia.published_at).toLocaleDateString('es-ES', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -69,8 +57,8 @@ export default async function NoticiaPage({ params }: { params: Promise<{ id: st
           {/* Imagen principal */}
           <div className="relative h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
             <Image
-              src={noticia.imagen}
-              alt={noticia.titulo}
+              src={resolvePublicImage(noticia.image_path, "/placeholder.svg")}
+              alt={noticia.title}
               fill
               className="object-cover"
               priority
@@ -80,17 +68,17 @@ export default async function NoticiaPage({ params }: { params: Promise<{ id: st
           {/* Encabezado del artículo */}
           <header className="mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {noticia.titulo}
+              {noticia.title}
             </h1>
             
             <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <time dateTime={noticia.fecha}>{fechaFormateada}</time>
+                <time dateTime={noticia.published_at}>{fechaFormateada}</time>
               </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
-                <span>{noticia.autor}</span>
+                <span>{noticia.author}</span>
               </div>
             </div>
           </header>
@@ -98,13 +86,13 @@ export default async function NoticiaPage({ params }: { params: Promise<{ id: st
           {/* Resumen */}
           <div className="bg-gray-50 p-6 rounded-lg mb-8">
             <p className="text-lg text-gray-700 font-medium">
-              {noticia.resumen}
+              {noticia.summary}
             </p>
           </div>
 
           {/* Contenido principal */}
           <div className="prose prose-lg max-w-none">
-            {noticia.contenido.split('\n').map((parrafo, index) => (
+            {noticia.content.split('\n').map((parrafo, index) => (
               <p key={index} className="mb-4 text-gray-700 leading-relaxed">
                 {parrafo}
               </p>

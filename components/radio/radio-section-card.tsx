@@ -6,7 +6,7 @@ interface RadioSectionCardProps {
   imageSrc: string
   description: string
   schedule: string
-  linkfanpage: string
+  linkfanpage?: string
 }
 
 export default function RadioSectionCard({ title, imageSrc, description, schedule, linkfanpage }: RadioSectionCardProps) {
@@ -23,14 +23,16 @@ export default function RadioSectionCard({ title, imageSrc, description, schedul
             <Clock className="h-4 w-4 mr-2" />
             <span className="text-sm font-medium">{schedule}</span>
           </div>
-          <a 
-            href={linkfanpage}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition-colors duration-200"
-          >
-            Fanpage
-          </a>
+          {linkfanpage ? (
+            <a 
+              href={linkfanpage}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition-colors duration-200"
+            >
+              Ver enlace
+            </a>
+          ) : null}
         </div>
       </div>
     </div>

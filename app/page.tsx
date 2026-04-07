@@ -5,6 +5,8 @@ import RadioPlayer from "@/components/home/radio-player"
 import FeaturedNews from "@/components/home/featured-news"
 import type { Metadata } from "next"
 import Script from "next/script"
+import { getSiteSections } from "@/lib/cms/public"
+import { resolvePublicImage } from "@/lib/cms/media"
 
 export const metadata: Metadata = {
   title: "Compañía de Teatro Entreparéntesis | Inicio",
@@ -16,7 +18,12 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Home() {
+export default async function Home() {
+  const sections = await getSiteSections(["home_hero", "home_mission", "home_vision"])
+  const hero = sections.home_hero
+  const mission = sections.home_mission
+  const vision = sections.home_vision
+
   return (
     <>
       <Script
@@ -104,33 +111,31 @@ export default function Home() {
         }}
       />
       <HeroSection
-        title="COMPAÑÍA DE TEATRO ENTREPARÉNTESIS"
-        subtitle="Organizadores del Festival de Teatro de Buin"
-        buttonText="Conócenos"
-        buttonLink="/nosotros"
-        imageSrc="/images/hero-foto.webp"
+        title={hero?.title || "COMPAÑÍA DE TEATRO ENTREPARÉNTESIS"}
+        subtitle={hero?.subtitle || "Organizadores del Festival de Teatro de Buin"}
+        buttonText={hero?.cta_label || "Conócenos"}
+        buttonLink={hero?.cta_href || "/nosotros"}
+        imageSrc={resolvePublicImage(hero?.image_path, "/images/hero-foto.webp")}
         imageAlt="Compañía de Teatro Entreparéntesis - Actores en escena"
       />
       <div className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12">
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Misión</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">{mission?.title || "Misión"}</h2>
               <p className="text-gray-600">
-                Descentralizar el teatro y hacerlo accesible para todos, llevando el arte teatral a comunidades que
-                tradicionalmente han tenido acceso limitado a expresiones culturales. Buscamos fomentar el desarrollo
-                artístico local y crear espacios de encuentro a través del teatro.
+                {mission?.description ||
+                  "Descentralizar el teatro y hacerlo accesible para todos, llevando el arte teatral a comunidades que tradicionalmente han tenido acceso limitado a expresiones culturales. Buscamos fomentar el desarrollo artístico local y crear espacios de encuentro a través del teatro."}
               </p>
             </div>
 
             <RadioPlayer />
 
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Visión</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">{vision?.title || "Visión"}</h2>
               <p className="text-gray-600">
-                Visibilizar nuestro trabajo y a nuestros integrantes, posicionándonos como un referente cultural en la
-                zona sur de la Región Metropolitana. Aspiramos a ser reconocidos por la calidad de nuestras producciones
-                y por nuestro compromiso con la comunidad local.
+                {vision?.description ||
+                  "Visibilizar nuestro trabajo y a nuestros integrantes, posicionándonos como un referente cultural en la zona sur de la Región Metropolitana. Aspiramos a ser reconocidos por la calidad de nuestras producciones y por nuestro compromiso con la comunidad local."}
               </p>
             </div>
           </div>

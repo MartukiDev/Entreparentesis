@@ -2,6 +2,8 @@ import ImageGallery from "@/components/ui/image-gallery"
 import Link from "next/link"
 import Image from "next/image"
 import { ChevronLeft } from "lucide-react"
+import { getPlayBySlug } from "@/lib/cms/public"
+import { resolvePublicImage } from "@/lib/cms/media"
 
 
 
@@ -449,9 +451,26 @@ export async function generateStaticParams() {
 }
 // Add more plays as needed with the same structure
 
-export default function PlayDetailPage({ params }: { params: { id: string } }) {
+export default async function PlayDetailPage({ params }: { params: { id: string } }) {
   const playId = params.id
-  const play = plays[playId as keyof typeof plays]
+  const cmsData = await getPlayBySlug(playId)
+  const staticPlay = plays[playId as keyof typeof plays]
+  const play = cmsData
+    ? {
+        title: cmsData.play.title,
+        year: cmsData.play.year,
+        director: cmsData.play.director,
+        coverImage: resolvePublicImage(cmsData.play.cover_image_path, "/placeholder.svg"),
+        fullDescription: (cmsData.play.full_description || cmsData.play.description || "Sin descripción")
+          .split("\n")
+          .filter(Boolean),
+        images: cmsData.images.map((image, index) => ({
+          id: image.id,
+          src: resolvePublicImage(image.image_path, "/placeholder.svg"),
+          alt: image.alt_text || `${cmsData.play.title} - Imagen ${index + 1}`,
+        })),
+      }
+    : staticPlay
 
   if (!play) {
     return (

@@ -13,8 +13,7 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true, // 👈 ¡Esto es lo nuevo!
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },

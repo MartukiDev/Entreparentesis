@@ -3,6 +3,7 @@ import HeroSection from "@/components/ui/hero-section"
 import SectionTitle from "@/components/ui/section-title"
 import NewsCard from "@/components/noticias/news-card"
 import Script from "next/script"
+import { getPublishedNews } from "@/lib/cms/public"
 
 export const metadata: Metadata = {
   title: "Noticias | Compañía de Teatro Entreparéntesis",
@@ -24,7 +25,10 @@ const noticias = [
 ]
 
 
-export default function NoticiasPage() {
+export default async function NoticiasPage() {
+  const cmsNews = await getPublishedNews()
+  const newsList = cmsNews.length > 0 ? cmsNews : noticias
+
   return (
     <>
       <Script
@@ -61,7 +65,7 @@ export default function NoticiasPage() {
             />
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              {noticias.map((noticia) => (
+              {newsList.map((noticia) => (
                 <NewsCard key={noticia.id} noticia={noticia} />
               ))}
             </div>

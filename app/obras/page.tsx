@@ -1,5 +1,7 @@
 import SectionTitle from "@/components/ui/section-title"
 import PlayCard from "@/components/obras/play-card"
+import { getPublishedPlays } from "@/lib/cms/public"
+import { resolvePublicImage } from "@/lib/cms/media"
 
 // This would typically come from a database or CMS
 const plays = [
@@ -204,7 +206,19 @@ const plays = [
   
 ]
 
-export default function PlaysPage() {
+export default async function PlaysPage() {
+  const cmsPlays = await getPublishedPlays()
+  const list = cmsPlays.length > 0
+    ? cmsPlays.map((play) => ({
+        id: play.slug,
+        title: play.title,
+        imageSrc: resolvePublicImage(play.cover_image_path, "/placeholder.svg"),
+        description: play.description || "Sin descripción",
+        year: play.year,
+        director: play.director,
+      }))
+    : plays
+
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="container mx-auto px-4 py-16">
@@ -214,7 +228,7 @@ export default function PlaysPage() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {plays.map((play) => (
+          {list.map((play) => (
             <PlayCard
               key={play.id}
               id={play.id}

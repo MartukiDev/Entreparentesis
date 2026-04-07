@@ -1,5 +1,7 @@
 import SectionTitle from "@/components/ui/section-title"
 import TeamSection from "@/components/integrantes/team-section"
+import { getPublishedMembers } from "@/lib/cms/public"
+import { resolvePublicImage } from "@/lib/cms/media"
 
 // This would typically come from a database or CMS
 const Members = [
@@ -102,7 +104,16 @@ const Members = [
   },
 ]
 
-export default function TeamPage() {
+export default async function TeamPage() {
+  const members = await getPublishedMembers()
+  const mappedMembers = members.map((member) => ({
+    id: member.slug,
+    name: member.name,
+    role: member.role,
+    imageSrc: resolvePublicImage(member.image_path, "/placeholder.svg"),
+    description: member.description || "",
+  }))
+
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="container mx-auto px-4 py-16">
@@ -123,7 +134,7 @@ export default function TeamPage() {
           </p>
         </div>
 
-        <TeamSection title="Integrantes" members={Members}
+        <TeamSection title="Integrantes" members={mappedMembers}
           description = "Estas son las personas que conforman el equipo de la Compañía Entreparéntesis."
         />
       </div>
